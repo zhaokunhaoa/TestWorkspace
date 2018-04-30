@@ -1,0 +1,41 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+workspace 'zhaokun.xcworkspace'
+
+#proj No.1
+targetsArray = ['TestOC'] 
+
+for index in 0..targetsArray.length - 1 do
+
+    proj = targetsArray[index]
+
+    target proj do
+
+        use_frameworks!
+        project 'TestOC/TestOC.xcodeproj'
+
+        pod 'AFNetworking'
+        
+       
+    end
+end
+
+
+#proj No.2
+targetsArray = ['TestOCIPad'] 
+
+for index in 0..targetsArray.length - 1 do
+
+    proj = targetsArray[index]
+
+    target proj do
+
+        use_frameworks!
+        project 'TestOCIPad/TestOCIPad.xcodeproj'
+
+        pod 'AFNetworking'
+        
+       
+    end
+end
