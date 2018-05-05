@@ -1,0 +1,40 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+workspace 'TestSwift.xcworkspace'
+
+# proj No.1
+targetsArray = ['TestProject'] 
+
+for index in 0..targetsArray.length - 1 do
+
+    proj = targetsArray[index]
+
+    target proj do
+        use_frameworks!
+        project 'TestProject/TestProject.xcodeproj'
+
+        pod 'AFNetworking'
+        pod 'YYModel'
+       
+    end
+end
+
+
+# proj No.2
+targetsArray = ['TestIPadProject'] 
+
+for index in 0..targetsArray.length - 1 do
+
+    proj = targetsArray[index]
+
+    target proj do
+        use_frameworks!
+        project 'TestIPadProject/TestIPadProject.xcodeproj'
+
+        pod 'AFNetworking'
+	pod 'YYModel'
+
+       
+    end
+end
