@@ -22,9 +22,11 @@
     [super viewDidLoad];
     
     [self setUpSubviews];
-#if DEV == 1
+#if DEBUG && DEVELOP
+    NSLog(@"开发环境");
+#elif DEBUG && TEST
     NSLog(@"测试环境");
-#else
+#elif !DEBUG
     NSLog(@"正式环境");
 #endif
 }
