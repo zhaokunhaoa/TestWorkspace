@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		008A26EB529CAC57406F1238 /* Pods_TestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CA8FCFBF96B0BCF02B2624B /* Pods_TestProject.framework */; };
 		81F654EAC60F0F973E31495B /* Pods_TestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CA8FCFBF96B0BCF02B2624B /* Pods_TestProject.framework */; };
+		BCA978CB209D770C004D9E32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6070E2096BADC0044E88F /* ViewController.swift */; };
+		BCA978CC209D770C004D9E32 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD607732096BF4F0044E88F /* BaseViewController.swift */; };
+		BCA978CD209D770C004D9E32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6070C2096BADC0044E88F /* AppDelegate.swift */; };
+		BCA978CE209D770C004D9E32 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD607712096BF170044E88F /* HomeViewController.swift */; };
+		BCA978D0209D770C004D9E32 /* ZKBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD6076F2096BC0F0044E88F /* ZKBase.framework */; };
+		BCA978D2209D770C004D9E32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCD607132096BADD0044E88F /* Assets.xcassets */; };
 		BCD6070D2096BADC0044E88F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6070C2096BADC0044E88F /* AppDelegate.swift */; };
 		BCD6070F2096BADC0044E88F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6070E2096BADC0044E88F /* ViewController.swift */; };
 		BCD607142096BADD0044E88F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCD607132096BADD0044E88F /* Assets.xcassets */; };
@@ -27,6 +33,8 @@
 		022E25C1B5189B8C5D318807 /* Pods-TestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.release.xcconfig"; path = "../Pods/Target Support Files/Pods-TestProject/Pods-TestProject.release.xcconfig"; sourceTree = "<group>"; };
 		6CA8FCFBF96B0BCF02B2624B /* Pods_TestProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		720DA412FF0A7C588BDB23DD /* Pods-TestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-TestProject/Pods-TestProject.debug.xcconfig"; sourceTree = "<group>"; };
+		BCA978D6209D770C004D9E32 /* TestProject-TEST.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TestProject-TEST.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCA978D7209D770C004D9E32 /* TestProject-DEV copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TestProject-DEV copy-Info.plist"; path = "/Users/kun/办公/#工程/TestWorkspace/TestSwift/TestProject/TestProject-DEV copy-Info.plist"; sourceTree = "<absolute>"; };
 		BCD607092096BADC0044E88F /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD6070C2096BADC0044E88F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCD6070E2096BADC0044E88F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +48,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BCA978CF209D770C004D9E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA978D0209D770C004D9E32 /* ZKBase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BCD607062096BADC0044E88F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -69,6 +85,7 @@
 				BCD6076E2096BC0F0044E88F /* Frameworks */,
 				CAB93AC7C191DB7169732976 /* Pods */,
 				BCD6078B2096CE8C0044E88F /* TestProject copy-Info.plist */,
+				BCA978D7209D770C004D9E32 /* TestProject-DEV copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +94,7 @@
 			children = (
 				BCD607092096BADC0044E88F /* TestProject.app */,
 				BCD6078A2096CE8B0044E88F /* TestProject-DEV.app */,
+				BCA978D6209D770C004D9E32 /* TestProject-TEST.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +133,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		BCA978C9209D770C004D9E32 /* TestProject-TEST */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCA978D3209D770C004D9E32 /* Build configuration list for PBXNativeTarget "TestProject-TEST" */;
+			buildPhases = (
+				BCA978CA209D770C004D9E32 /* Sources */,
+				BCA978CF209D770C004D9E32 /* Frameworks */,
+				BCA978D1209D770C004D9E32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TestProject-TEST";
+			productName = TestProject;
+			productReference = BCA978D6209D770C004D9E32 /* TestProject-TEST.app */;
+			productType = "com.apple.product-type.application";
+		};
 		BCD607082096BADC0044E88F /* TestProject */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCD6071B2096BADD0044E88F /* Build configuration list for PBXNativeTarget "TestProject" */;
@@ -182,11 +217,20 @@
 			targets = (
 				BCD607082096BADC0044E88F /* TestProject */,
 				BCD607772096CE8B0044E88F /* TestProject-DEV */,
+				BCA978C9209D770C004D9E32 /* TestProject-TEST */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BCA978D1209D770C004D9E32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA978D2209D770C004D9E32 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BCD607072096BADC0044E88F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,6 +306,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		BCA978CA209D770C004D9E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCA978CB209D770C004D9E32 /* ViewController.swift in Sources */,
+				BCA978CC209D770C004D9E32 /* BaseViewController.swift in Sources */,
+				BCA978CD209D770C004D9E32 /* AppDelegate.swift in Sources */,
+				BCA978CE209D770C004D9E32 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BCD607052096BADC0044E88F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -287,6 +342,48 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		BCA978D4209D770C004D9E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44CZYSLT56;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"TEST=1",
+				);
+				INFOPLIST_FILE = "TestProject-DEV copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hanamichi.com.TestProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG TEST";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCA978D5209D770C004D9E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44CZYSLT56;
+				INFOPLIST_FILE = "TestProject-DEV copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hanamichi.com.TestProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		BCD607192096BADD0044E88F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -411,7 +508,6 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
-					"DEV=0",
 				);
 				INFOPLIST_FILE = TestProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -420,6 +516,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hanamichi.com.TestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -453,7 +550,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
-					"DEV=1",
+					"DEVELOP=1",
 				);
 				INFOPLIST_FILE = "TestProject copy-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -462,7 +559,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = hanamichi.com.TestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG DEV";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG DEVELOP";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -489,6 +586,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		BCA978D3209D770C004D9E32 /* Build configuration list for PBXNativeTarget "TestProject-TEST" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCA978D4209D770C004D9E32 /* Debug */,
+				BCA978D5209D770C004D9E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BCD607042096BADC0044E88F /* Build configuration list for PBXProject "TestProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

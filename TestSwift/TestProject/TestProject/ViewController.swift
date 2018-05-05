@@ -16,9 +16,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         view.backgroundColor = UIColor.green
         
-        #if DEV
+        #if DEBUG && DEVELOP
+            print("开发环境")
+        #elseif DEBUG && TEST
             print("测试环境")
-        #else
+        #elseif !DEBUG
             print("正式环境")
         #endif
         
