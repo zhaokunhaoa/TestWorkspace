@@ -30,7 +30,6 @@ xcuserdata/
 *.dSYM
 *.xcuserstate
 .idea/
-*.xcworkspace
 !default.xcworkspace
 .DS_Store
 archive/

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:TestOC/TestOC.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TestOCIPad/TestOCIPad.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BaseTest/BaseTest.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ZKView/ZKView.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ZKText/ZKText.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
